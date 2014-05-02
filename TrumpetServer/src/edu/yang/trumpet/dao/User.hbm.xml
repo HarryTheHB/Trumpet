@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 11, 2013 10:05:12 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="edu.yang.trumpet.dao.User" table="User" lazy="false">
+        <id name="idUser" type="int">
+            <column name="idUser" />
+            <generator class="identity" />
+        </id>
+        <property name="idPersonalInfo" type="int">
+            <column name="PersonalInfo_idPersonalInfo" />
+        </property>
+        <property name="email" type="java.lang.String">
+            <column name="email" />
+        </property>
+        <property name="password" type="java.lang.String">
+            <column name="password" />
+        </property>
+    </class>
+</hibernate-mapping>

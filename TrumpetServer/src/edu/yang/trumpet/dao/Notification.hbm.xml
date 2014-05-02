@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 11, 2013 10:05:12 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="edu.yang.trumpet.dao.Notification" table="Notification" lazy="false">
+    <composite-id>
+        <key-property name="idUser" type="int">
+            <column name="User_idUser" />
+            </key-property>   
+        <key-property name="idStatus" type="int">
+            <column name="Status_idStatus" />
+         </key-property>   
+     </composite-id>
+        <property name="time" type="java.sql.Timestamp">
+            <column name="time" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 11, 2013 10:05:12 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="edu.yang.trumpet.dao.PersonalInfo" table="PersonalInfo" lazy="false">
+        <id name="idPersonalInfo" type="int">
+            <column name="idPersonalInfo" />
+            <generator class="identity" />
+        </id>
+        <property name="nickName" type="java.lang.String">
+            <column name="nickname" />
+        </property>
+        <property name="age" type="int">
+            <column name="age" />
+        </property>
+        <property name="gender" type="java.lang.String">
+            <column name="gender" />
+        </property>
+        <property name="visibility" type="int">
+            <column name="visibility" />
+        </property>
+        <property name="description" type="java.lang.String">
+            <column name="description" />
+        </property>
+    </class>
+</hibernate-mapping>

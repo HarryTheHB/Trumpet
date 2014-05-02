@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+ 
+<struts>
+    <constant name="struts.enable.DynamicMethodInvocation"
+        value="false" />
+    <constant name="struts.devMode" value="true" />
+    <constant name="struts.custom.i18n.resources"
+        value="ApplicationResources" />
+ 
+    <package name="default" extends="json-default" namespace="/">
+    
+        
+  <!-- 
+  <action name="login"
+            class="edu.yang.trumpet.action.ServerTest">
+            <result name="success">Welcome.jsp</result>
+            <result name="error">Login.jsp</result>
+        </action>
+        <action name="getjson" 
+            class="edu.yang.trumpet.action.JSONTest" method="json">
+            <result type="json"></result>
+        </action>
+        <action name="register"
+		class="edu.yang.trumpet.action.RegisterAction" method="run">
+		</action>\
+				<action name="myprofile"
+		class="edu.yang.trumpet.action.MyProfileRequestAction" method="run">
+		</action>
+		<action name="editprofile"
+		class="edu.yang.trumpet.action.ProfileUpdateAction" method="run">
+		</action>
+		<action name="otherprofile"
+		class="edu.yang.trumpet.action.ProfileRequestAction" method="run">
+		</action>
+   -->      
+
+		
+	<action name="register"
+		class="edu.yang.trumpet.action.RegisterAction" method="run">
+		</action>
+    <action name="login"
+		class="edu.yang.trumpet.action.LoginAction" method="run">
+		</action>
+		<action name="logout"
+		class="edu.yang.trumpet.action.LogoutAction" method="run">
+		</action>
+		<action name="post"
+		class="edu.yang.trumpet.action.PostAction" method="main">
+		</action>
+		<action name="allstatus"
+		class="edu.yang.trumpet.action.AllStatusRequestAction" method="main">
+		</action>
+		<action name="mystatus"
+		class="edu.yang.trumpet.action.MyStatusRequestAction" method="main">
+		</action>
+		<action name="comment"
+		class="edu.yang.trumpet.action.CommentAction" method="main">
+		</action>
+		<action name="allcomments"
+		class="edu.yang.trumpet.action.CommentRequestAction" method="main">
+		</action>
+		<action name="myprofile"
+		class="edu.yang.trumpet.action.MyProfileRequestAction" method="main">
+		</action>
+		<action name="notification"
+		class="edu.yang.trumpet.action.NotificationRequestAction" method="main">
+		</action>
+		<action name="editprofile"
+		class="edu.yang.trumpet.action.ProfileUpdateAction" method="main">
+		</action>
+		<action name="otherprofile"
+		class="edu.yang.trumpet.action.ProfileRequestAction" method="main">
+		</action>
+		<action name="getjson" 
+            class="edu.yang.trumpet.action.JSONTest" method="json">
+            <result type="json"></result>
+        </action>
+    </package>
+    
+</struts>
